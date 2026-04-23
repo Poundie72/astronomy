@@ -220,7 +220,7 @@ const SOLAR_PLANETS = [
     type: "Terrestrial", diameter: "4,879 km", dayLen: "59 Earth days", yearLen: "88 Earth days", temp: "167°C avg",
     astrobio: 8 },
   { name: "Venus",   period: 0.615,  radius: 6,   color: "#e8cda0", dist: 0.72,  moons: 0,
-    desc: "Earth's 'evil twin',  nearly identical in size but catastrophically different. Runaway greenhouse effect: 96% CO₂ atmosphere, 92 bar pressure, 462°C surface. Possible microbial life survives in cloud layers at ~50 km altitude.",
+    desc: "Nearly identical in size to Earth but catastrophically different. Runaway greenhouse effect: 96% CO₂ atmosphere, 92 bar pressure, 462°C surface. Possible microbial life survives in cloud layers at ~50 km altitude.",
     type: "Terrestrial", diameter: "12,104 km", dayLen: "243 Earth days", yearLen: "225 Earth days", temp: "462°C",
     astrobio: 30 },
   { name: "Earth",   period: 1.000,  radius: 6.5, color: "#4fa3e0", dist: 1.00,  moons: 1,
