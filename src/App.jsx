@@ -56,7 +56,7 @@ const LIFE_TIMELINE = [
   { mya: 4500, label: "Earth forms", icon: "🌍", color: "#e87832", cat: "geo",
     desc: "Accretion of solar nebula material forms proto-Earth. Heavy bombardment by planetesimals delivers water and organics. The Moon-forming impact with Theia occurs ~4.5 Ga, stabilizing Earth's axial tilt." },
   { mya: 4100, label: "Late Heavy Bombardment", icon: "☄️", color: "#cc5522", cat: "geo",
-    desc: "Intense meteorite bombardment reshapes the inner solar system. Paradoxically, this may have delivered the chemical building blocks needed for life — amino acids, nucleobases, and liquid water." },
+    desc: "Intense meteorite bombardment reshapes the inner solar system. This may have delivered the chemical building blocks needed for life: amino acids, nucleobases, and liquid water." },
   { mya: 3800, label: "First oceans", icon: "🌊", color: "#3a7abf", cat: "geo",
     desc: "Zircon crystals preserve evidence of liquid water by 4.4 Ga. Stable oceans form as Earth cools. Hydrothermal vents along mid-ocean ridges create chemical gradients — perfect energy sources for early life." },
   { mya: 3500, label: "First microbial life", icon: "🦠", color: "#44aa44", cat: "bio",
