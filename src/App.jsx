@@ -76,24 +76,35 @@ const LIFE_TIMELINE = [
 ];
 
 const EXOPLANETS = [
-  { name: "Kepler-442b", x: 72, y: 35, type: "super-earth", hz: true, water: "possible", radius: 1.34, temp: -40, star: "K-dwarf", dist: 1200, color: "#4fa3e0",
-    desc: "One of the most Earth-like planets known. Receives ~70% of Earth's stellar flux — slightly cold but potentially habitable with a thick atmosphere. High habitability index candidate." },
-  { name: "TRAPPIST-1e", x: 28, y: 55, type: "earth-size", hz: true, water: "likely", radius: 0.92, temp: -22, star: "M-dwarf", dist: 39, color: "#44cc88",
-    desc: "Orbits within the habitable zone of TRAPPIST-1, just 39 light-years away. Tidal locking is a concern, but atmospheric circulation may distribute heat. Atmospheric characterization is ongoing with JWST." },
-  { name: "Proxima Cen b", x: 18, y: 30, type: "earth-size", hz: true, water: "unknown", radius: 1.07, temp: -39, star: "M-dwarf", dist: 4.2, color: "#f7a43a",
-    desc: "The nearest exoplanet to Earth. Subject to intense stellar flares from its red dwarf host. Whether it can retain an atmosphere is the key open question. A prime target for future direct imaging." },
-  { name: "K2-18b", x: 55, y: 20, type: "sub-neptune", hz: true, water: "detected", radius: 2.37, temp: -3, star: "M-dwarf", dist: 124, color: "#cc44aa",
-    desc: "A 'Hycean world' candidate — possibly a water ocean beneath a hydrogen atmosphere. JWST detected carbon dioxide and methane, consistent with a liquid water ocean. Controversial DMS detection in 2023." },
-  { name: "55 Cancri e", x: 82, y: 72, type: "super-earth", hz: false, water: "none", radius: 1.88, temp: 2573, star: "G-dwarf", dist: 41, color: "#ff5533",
-    desc: "A lava world completing one orbit in 18 hours. Extremely hot with a molten surface. Possible silicate vapor atmosphere. A cautionary tale — proximity to star determines everything." },
-  { name: "HD 40307g", x: 42, y: 75, type: "super-earth", hz: true, water: "possible", radius: 2.5, temp: -5, star: "K-dwarf", dist: 42, color: "#88aaff",
-    desc: "A super-Earth in the habitable zone that does not appear to be tidally locked. Surface gravity 2x Earth's. If rocky, liquid water could persist. Atmospheric characterization is technologically challenging." },
-  { name: "Tau Ceti e", x: 65, y: 62, type: "super-earth", hz: true, water: "possible", radius: 1.65, temp: 68, star: "G-dwarf", dist: 12, color: "#ffcc44",
-    desc: "Orbits a Sun-like star only 12 light-years away. The system has a massive debris disk suggesting high asteroid/comet bombardment rates, which may threaten surface habitability. A nearby but complex case." },
-  { name: "TRAPPIST-1d", x: 35, y: 38, type: "earth-size", hz: true, water: "possible", radius: 0.77, temp: 15, star: "M-dwarf", dist: 39, color: "#44eecc",
-    desc: "The innermost TRAPPIST-1 habitable zone planet. Receives stellar flux similar to Mars. Less massive than Earth; atmospheric retention is uncertain. Rocky composition confirmed by transit timing." },
-  { name: "Gliese 667Cc", x: 80, y: 42, type: "super-earth", hz: true, water: "possible", radius: 1.54, temp: 30, star: "M-dwarf", dist: 23, color: "#ee8844",
-    desc: "A super-Earth in a triple star system. Receives similar stellar energy to Earth. The unusual stellar environment would create striking visual phenomena. Part of a complex multi-planet system." },
+  { mya: 4500, label: "Earth forms", icon: "🌍", color: "#e87832", cat: "geo",
+  desc: "Dust and gas from the early solar system clump together to form proto-Earth. A Mars-sized body called Theia slams into Earth, ejecting debris that becomes the Moon and stabilizes Earth's tilt." },
+
+{ mya: 4100, label: "Late Heavy Bombardment", icon: "☄️", color: "#cc5522", cat: "geo",
+  desc: "A surge of asteroid and comet impacts batters the inner solar system. Despite the chaos, these collisions likely delivered key ingredients for life: water, amino acids, and carbon compounds." },
+
+{ mya: 3800, label: "First oceans", icon: "🌊", color: "#3a7abf", cat: "geo",
+  desc: "Earth cools enough for liquid water to pool on the surface. Ancient zircon crystals suggest oceans existed as far back as 4.4 Ga. Hydrothermal vents on the seafloor may have provided energy for early life." },
+
+{ mya: 3500, label: "First microbial life", icon: "🦠", color: "#44aa44", cat: "bio",
+  desc: "Stromatolites in Western Australia, layered mounds built by microbes, record the earliest clear evidence of life. Older rocks hint that life may have gotten started even earlier, around 3.8–4.1 Ga." },
+
+{ mya: 2700, label: "Photosynthesis evolves", icon: "☀️", color: "#f7c43a", cat: "bio",
+  desc: "Cyanobacteria learn to split water molecules using sunlight, releasing oxygen as a byproduct. This single invention would go on to reshape Earth's atmosphere and make complex life possible." },
+
+{ mya: 2400, label: "Great Oxidation Event", icon: "💨", color: "#88ccee", cat: "geo",
+  desc: "Oxygen from photosynthesis floods the atmosphere for the first time. Most anaerobic life, which found oxygen toxic, goes extinct. The oxygen also builds up an ozone layer that shields Earth from UV radiation." },
+
+{ mya: 2000, label: "Eukaryotes emerge", icon: "🧬", color: "#cc44aa", cat: "bio",
+  desc: "A bacterium gets absorbed into a larger cell rather than digested, and both survive. This merger creates the first cell with a nucleus and mitochondria, opening the door to complex, multicellular life." },
+
+{ mya: 541, label: "Cambrian Explosion", icon: "🐚", color: "#44ccaa", cat: "bio",
+  desc: "Nearly all major animal body plans, eyes, shells, limbs, nervous systems, appear within about 20 million years. This was likely triggered by rising oxygen and ecological competition." },
+
+{ mya: 66, label: "K-Pg extinction", icon: "💥", color: "#ff4422", cat: "geo",
+  desc: "A 10 km asteroid strikes Earth, killing 75% of all species including non-avian dinosaurs. Small mammals survive and spread into the vacated ecological niches, eventually giving rise to primates and humans." },
+
+{ mya: 0.3, label: "Homo sapiens", icon: "👁️", color: "#f0e0c0", cat: "bio",
+  desc: "Modern humans evolve in Africa. Within a few hundred thousand years, we develop language and art, decode the genome, split the atom, and send spacecraft beyond the edge of the solar system." },
 ];
 
 const BIOSIGNATURES = [
@@ -241,10 +252,10 @@ const SOLAR_PLANETS = [
 const ASTROBIO_NOTES = {
   Mercury: "Extreme temperatures and no atmosphere make surface life impossible. Impact history and polar ice are the main research interests.",
   Venus:   "Atmospheric chemical disequilibrium hints at possible aerial microbial life at 50 km altitude where conditions are mild. Phosphine detection remains controversial.",
-  Earth:   "The benchmark for habitability. Liquid water, active tectonics, magnetic field, large Moon stabilizing axial tilt — all potentially critical factors.",
+  Earth:   "The benchmark for habitability. Liquid water, active tectonics, magnetic field, large Moon stabilizing axial tilt, all potentially critical factors.",
   Mars:    "Best candidate for past life. Liquid water flowed ~3.5 Gya. Subsurface brines may persist today. Perseverance rover is collecting samples for return to Earth.",
-  Jupiter: "Europa's ocean is a premier life candidate — 2–3× more water than Earth, in contact with a rocky seafloor enabling hydrothermal chemistry like Earth's vents.",
-  Saturn:  "Enceladus ejects water, organics, and H₂ — all ingredients for methanogenic life. Titan is a prebiotic chemistry laboratory with lakes of liquid methane.",
+  Jupiter: "Europa's ocean is a premier life candidate, 2–3× more water than Earth, in contact with a rocky seafloor enabling hydrothermal chemistry like Earth's vents.",
+  Saturn:  "Enceladus ejects water, organics, and H₂, all ingredients for methanogenic life. Titan is a prebiotic chemistry laboratory with lakes of liquid methane.",
   Uranus:  "Internal oceans possible in moons Miranda and Ariel. A Uranus orbiter is NASA's top-priority flagship mission for the 2030s.",
   Neptune: "Triton's geysers and retrograde orbit suggest a captured Kuiper Belt object that may preserve primordial chemistry. Interior ocean is plausible.",
 };
