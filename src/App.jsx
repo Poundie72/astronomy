@@ -171,7 +171,7 @@ const DRAKE_PARAMS = [
   { id: "fl", label: "Fraction where life arises", unit: "", min: 0, max: 1, default: 0.13, log: false,
     desc: "The deepest unknown. Earth suggests life is easy once conditions are right, but we have one data point." },
   { id: "fi", label: "Fraction developing intelligence", unit: "", min: 0, max: 1, default: 0.01, log: false,
-    desc: "Intelligence evolved once in 4+ billion years on Earth. Convergent evolution of eyes, limbs suggests some traits are inevitable, but intelliegence does not ." },
+    desc: "Intelligence evolved once in 4+ billion years on Earth. Convergent evolution of eyes, limbs, and other features suggests some traits are inevitable, but intelliegence has not followed this same pattern." },
   { id: "fc", label: "Fraction that communicates", unit: "", min: 0, max: 1, default: 0.2, log: false,
     desc: "Technological civilizations that produce detectable signals. We've been broadcasting for ~100 years out of ~300,000 years of existence." },
   { id: "L", label: "Civilization lifespan", unit: "years", min: 100, max: 1e9, default: 10000, log: true,
