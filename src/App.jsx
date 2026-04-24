@@ -228,7 +228,7 @@ const SOLAR_PLANETS = [
     type: "Terrestrial", diameter: "12,742 km", dayLen: "24 hours", yearLen: "365.25 days", temp: "15°C avg",
     astrobio: 100 },
   { name: "Mars",    period: 1.881,  radius: 4,   color: "#c1440e", dist: 1.52,  moons: 2,
-    desc: "Once had rivers, lakes, and likely hosted a northern ocean. Lost its magnetic field ~4 Gya, then its atmosphere to solar wind. Subsurface liquid water may persist. Good candidate for harboring life in the past.",
+    desc: "Once had rivers, lakes, and likely hosted a northern ocean. Lost its magnetic field ~4 Gya, then its atmosphere to solar wind. Subsurface liquid water may persist.",
     type: "Terrestrial", diameter: "6,779 km", dayLen: "24.6 hours", yearLen: "687 Earth days", temp: "-60°C avg",
     astrobio: 72 },
   { name: "Jupiter", period: 11.86,  radius: 14,  color: "#c88b3a", dist: 5.20,  moons: 95,
@@ -251,12 +251,12 @@ const SOLAR_PLANETS = [
 
 const ASTROBIO_NOTES = {
   Mercury: "Extreme temperatures and no atmosphere make surface life impossible. Impact history and polar ice are the main research interests.",
-  Venus:   "Atmospheric chemical disequilibrium hints at possible aerial microbial life at 50 km altitude where conditions are mild. Phosphine detection remains controversial.",
+  Venus:   "Atmospheric chemical disequilibrium hints at possible aerial microbial life at 50 km altitude where conditions are mild.",
   Earth:   "The benchmark for habitability. Liquid water, active tectonics, magnetic field, large Moon stabilizing axial tilt, all potentially critical factors.",
-  Mars:    "Best candidate for past life. Liquid water flowed ~3.5 Gya. Subsurface brines may persist today. Perseverance rover is collecting samples for return to Earth.",
+  Mars:    "Good candidate for past life. Liquid water flowed ~3.5 Gya. Subsurface brines may persist today. Perseverance rover is collecting samples for return to Earth.",
   Jupiter: "Europa's ocean is a premier life candidate, 2–3× more water than Earth, in contact with a rocky seafloor enabling hydrothermal chemistry like Earth's vents.",
-  Saturn:  "Enceladus ejects water, organics, and H₂, all ingredients for methanogenic life. Titan is a prebiotic chemistry laboratory with lakes of liquid methane.",
-  Uranus:  "Internal oceans possible in moons Miranda and Ariel. A Uranus orbiter is NASA's top-priority flagship mission for the 2030s.",
+  Saturn:  "Enceladus ejects water, organics, and H₂, all ingredients for methanogenic life. Titan is a prebiotic chemistry laboratory with lakes of liquid methane. Two great candidated for life possibly evolving.",
+  Uranus:  "Uranus and it's moons remains some of the least explored in our solar system, and a Uranus orbiter is NASA's top-priority flagship mission for the 2030s meaning our understanding of its habitability potential could change significantly within our lifetimes.",
   Neptune: "Triton's geysers and retrograde orbit suggest a captured Kuiper Belt object that may preserve primordial chemistry. Interior ocean is plausible.",
 };
 
@@ -1084,9 +1084,9 @@ function DrakeModule() {
       <div style={{ marginTop: 20, padding: "16px 20px", borderRadius: 10, background: "rgba(247,164,58,.08)", border: "1px solid rgba(247,164,58,.3)" }}>
         <div style={{ fontFamily: "'Rajdhani',sans-serif", fontWeight: 600, fontSize: 15, color: "#f7a43a", marginBottom: 8, letterSpacing: .5 }}>THE FERMI PARADOX</div>
         <p style={{ color: "#b0cfe0", fontSize: 13.5, lineHeight: 1.65, fontStyle: "italic" }}>
-          If N is large, "Where is everybody?" The galaxy is 13 billion years old — enough time for a civilization to colonize every star system at sub-light speeds many times over. 
-          The silence may mean: civilizations are rare (Rare Earth), they don't last long (Great Filter ahead or behind us), 
-          they communicate differently (Dark Forest), or they're here and we haven't recognized them.
+          If N is large, "Where is everybody?" The galaxy is 13 billion years old, enough time for a civilization to colonize every star system at sub-light speeds many times over. 
+          The silence may mean: civilizations are rare (Rare Earth), no one has colonized the galaxy, 
+          or there is a galactic civilization, but they have avoided us on purpose.
         </p>
       </div>
     </div>
