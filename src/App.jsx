@@ -228,7 +228,7 @@ const SOLAR_PLANETS = [
     type: "Terrestrial", diameter: "12,742 km", dayLen: "24 hours", yearLen: "365.25 days", temp: "15°C avg",
     astrobio: 100 },
   { name: "Mars",    period: 1.881,  radius: 4,   color: "#c1440e", dist: 1.52,  moons: 2,
-    desc: "Once had rivers, lakes, and possibly an ocean. Lost its magnetic field ~4 Gya, then its atmosphere to solar wind. Subsurface liquid water may persist. Best candidate for past or present extraterrestrial life in our solar system.",
+    desc: "Once had rivers, lakes, and likely hosted a northern ocean. Lost its magnetic field ~4 Gya, then its atmosphere to solar wind. Subsurface liquid water may persist. Good candidate for harboring life in the past.",
     type: "Terrestrial", diameter: "6,779 km", dayLen: "24.6 hours", yearLen: "687 Earth days", temp: "-60°C avg",
     astrobio: 72 },
   { name: "Jupiter", period: 11.86,  radius: 14,  color: "#c88b3a", dist: 5.20,  moons: 95,
